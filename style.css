@@ -6,6 +6,11 @@ html {
   overflow-x: hidden;
 }
 
+h4 {
+  font-size: 15px;
+  color: rgb(209, 209, 209);
+}
+
 body {
   margin: 0px;
   width: 100vw;
@@ -66,4 +71,59 @@ main {
 }
 .buy p {
   margin: 0px;
+}
+.phonesmain .buy {
+  grid-row-start: 5;
+}
+
+.phonesmain {
+  height: 100%;
+  background-color: #0b0b0b;
+  display: grid;
+  grid-template-columns: 3fr min-content 1fr min-content 3fr;
+  grid-template-rows: 40px 45px min-content 30px 43px 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+.smallphone {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  width: 160px;
+}
+.plusphone {
+  grid-column-start: 4;
+  grid-row-start: 3;
+  width: 160px;
+}
+#buy2 {
+  grid-column-start: 4;
+}
+
+#basetitle {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+#plustitle {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 30px;
+  padding-top: 30px;
+  color: rgb(209, 209, 209);
+  grid-row-start: 6;
+  justify-self: start;
+  align-self: start;
+}
+li {
+  margin-bottom: 6px;
+}
+#baselist {
+  grid-column-start: 2;
+}
+#pluslist {
+  grid-column-start: 4;
 }
