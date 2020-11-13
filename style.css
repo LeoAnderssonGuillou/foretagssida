@@ -14,12 +14,19 @@ h4 {
 body {
   margin: 0px;
   width: 100vw;
-  height: 1000px;
 }
 
 header {
   width: 100%;
   height: 80px;
+  background-color: black;
+  color: white;
+  font-size-adjust: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
   background-color: black;
   color: white;
   font-size-adjust: 100%;
@@ -37,22 +44,13 @@ nav a {
   text-decoration: none;
   color: white;
 }
-@media screen and (max-width: 426px) {
-  nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 
 main {
   height: 100%;
   background-color: #0b0b0b;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: 45px min-content 35px 43px;
+  grid-template-rows: 45px min-content 35px 43px 40px;
   justify-items: center;
   align-items: center;
 }
@@ -90,9 +88,21 @@ main {
   background-color: #0b0b0b;
   display: grid;
   grid-template-columns: 3fr min-content 1fr min-content 3fr;
-  grid-template-rows: 40px 45px min-content 30px 43px 100px;
+  grid-template-rows: 40px 45px min-content 30px 43px 200px;
   justify-items: center;
   align-items: center;
+}
+
+.beanbody {
+  height: 100vh;
+}
+
+.beansmain {
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5fr 1fr 80px;
 }
 
 .smallphone {
@@ -105,6 +115,23 @@ main {
   grid-row-start: 3;
   width: 160px;
 }
+
+@media screen and (max-width: 426px) {
+  nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .smallphone {
+    width: 140px;
+  }
+  .plusphone {
+    width: 140px;
+  }
+}
+
 #buy2 {
   grid-column-start: 4;
 }
@@ -135,4 +162,16 @@ li {
 }
 #pluslist {
   grid-column-start: 4;
+}
+
+.beanbox {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.beanbox p {
+  display: block;
+  width: 400px;
 }
