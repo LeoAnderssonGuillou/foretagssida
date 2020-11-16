@@ -115,8 +115,10 @@ nav a {
   height: 80vh;
   background-color: white;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 5fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .smallphone {
@@ -181,20 +183,20 @@ li {
   grid-column-start: 4;
 }
 
-.beanbox {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.beansmain section {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
-.beanbox section {
-  width: 400px;
-  height: 250px;
-  margin-top: 60px;
-  margin-left: 100px;
+.beansmain img {
+  height: 100%;
+  grid-row-start: 2;
+  grid-column-start: 3;
 }
-.beanbox img {
-  height: 250px;
-  margin-top: 60px;
-  margin-right: 100px;
+
+#buybeans {
+  grid-row-start: 3;
+  grid-column: 2 / 4;
+  height: 43px;
+  text-decoration: none;
 }
