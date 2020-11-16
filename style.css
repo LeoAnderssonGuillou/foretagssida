@@ -35,6 +35,14 @@ footer {
   background-color: black;
   color: white;
   font-size-adjust: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(63, 63, 63);
+}
+
+footer p {
+  margin: 0px;
 }
 
 nav {
