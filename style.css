@@ -10,7 +10,10 @@ h1 {
   margin: 0px;
   font-size: 40px;
 }
-
+h3 {
+  font-size: 18px;
+  color: white;
+}
 h4 {
   font-size: 15px;
   color: rgb(209, 209, 209);
@@ -133,25 +136,6 @@ nav a {
   width: 160px;
 }
 
-@media screen and (max-width: 426px) {
-  nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .smallphone {
-    width: 140px;
-  }
-  .plusphone {
-    width: 140px;
-  }
-  .phonetext {
-    display: none;
-  }
-}
-
 #buy2 {
   grid-column-start: 4;
 }
@@ -165,7 +149,7 @@ nav a {
   grid-row-start: 2;
 }
 
-ul {
+.phonesmain ul {
   margin: 0px;
   padding-left: 30px;
   padding-top: 30px;
@@ -187,6 +171,7 @@ li {
 .beansmain section {
   grid-column-start: 2;
   grid-row-start: 2;
+  font-size: 16px;
 }
 
 .beansmain img {
@@ -199,7 +184,85 @@ li {
   grid-row-start: 3;
   grid-column: 2 / 4;
   height: 43px;
-  text-decoration: none;
+}
+
+.onemain {
+  width: 100vw;
+  background-color: #0b0b0b;
+  display: grid;
+  grid-template-columns: 4fr 7fr 1fr 7fr 1fr 7fr 4fr;
+  grid-template-rows: 60px 400px 60px;
+  justify-items: center;
+  align-items: center;
+}
+
+.plan {
+  grid-row: 2 / 3;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: 40px 50px 220px 50px 40px;
+}
+.plan h3 {
+  grid-column-start: 2;
+  margin: 0px;
+  align-self: center;
+}
+.plan h1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.plan ul {
+  grid-column: 2 / 4;
+  grid-row-start: 3;
+  margin-top: 30px;
+  padding-left: 6px;
+  width: 100%;
+  color: rgb(209, 209, 209);
+  text-align: start;
+}
+.plan a {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  height: 43px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  place-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 95px;
+}
+
+#basic {
+  grid-column: 2 / 3;
+  border-color: silver;
+}
+#standard {
+  grid-column: 4 / 5;
+  border-color: #ff0178;
+}
+#premium {
+  grid-column: 6 / 7;
+  border-color: gold;
+}
+#basic h3 {
+  color: silver;
+}
+#standard h3 {
+  color: #ff0178;
+}
+#premium h3 {
+  color: gold;
+}
+#premium ul {
+  padding-left: 12px;
 }
 
 @media screen and (max-width: 426px) {
@@ -223,5 +286,21 @@ li {
   #buybeans {
     grid-column: 1;
     grid-row-start: 4;
+  }
+  nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .smallphone {
+    width: 140px;
+  }
+  .plusphone {
+    width: 140px;
+  }
+  .phonetext {
+    display: none;
   }
 }
