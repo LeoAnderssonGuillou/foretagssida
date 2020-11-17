@@ -113,10 +113,11 @@ nav a {
 
 .beansmain {
   height: 80vh;
+  width: 100vw;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-rows: 1fr 300px 2fr;
   justify-items: center;
   align-items: center;
 }
@@ -189,9 +190,9 @@ li {
 }
 
 .beansmain img {
-  height: 100%;
-  grid-row-start: 2;
   grid-column-start: 3;
+  grid-row-start: 2;
+  height: 300px;
 }
 
 #buybeans {
@@ -199,4 +200,28 @@ li {
   grid-column: 2 / 4;
   height: 43px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 426px) {
+  .beansmain {
+    height: 140vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr 5fr 3fr 0.5fr;
+  }
+  .beansmain section {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .beansmain img {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    height: 320px;
+  }
+  #buybeans {
+    grid-column: 1;
+    grid-row-start: 4;
+  }
 }
