@@ -190,10 +190,26 @@ li {
   width: 100vw;
   background-color: #0b0b0b;
   display: grid;
-  grid-template-columns: 4fr 7fr 1fr 7fr 1fr 7fr 4fr;
-  grid-template-rows: 60px 400px 60px;
+  grid-template-columns: 4fr 6fr 1fr 6fr 1fr 6fr 4fr;
+  grid-template-rows: 125px 380px 60px;
   justify-items: center;
   align-items: center;
+}
+
+.intro {
+  color: white;
+  grid-column: 1 / 8;
+  grid-row-start: 1;
+  font-size: 16px;
+  text-align: center;
+  align-self: start;
+}
+.intro h1 {
+  margin-top: 26px;
+}
+.intro p {
+  margin-top: 6px;
+  color: rgb(209, 209, 209);
 }
 
 .plan {
@@ -207,7 +223,7 @@ li {
   border-style: solid;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: 40px 50px 220px 50px 40px;
+  grid-template-rows: 40px 50px 200px 50px 40px;
 }
 .plan h3 {
   grid-column-start: 2;
@@ -314,5 +330,27 @@ li {
   }
   .phonetext {
     display: none;
+  }
+
+  .onemain {
+    grid-template-columns: 1.5fr 8fr 1.5fr;
+    grid-template-rows: 182px 380px 30px 380px 30px 380px 60px;
+    justify-items: center;
+    align-items: center;
+  }
+  .intro h1 {
+    margin-top: 55px;
+  }
+  #basic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  #standard {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  #premium {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
   }
 }
