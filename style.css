@@ -265,11 +265,23 @@ li {
   padding-left: 12px;
 }
 
+#buybasic {
+  background-color: silver;
+  color: #0b0b0b;
+}
+#buystandard {
+  background-color: #ff0178;
+}
+#buypremium {
+  background-color: gold;
+  color: #0b0b0b;
+}
+
 @media screen and (max-width: 426px) {
   .beansmain {
     height: 140vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 4fr 5fr 3fr 0.5fr;
+    grid-template-rows: 0.5fr 3fr 5fr 2fr 1fr;
   }
   .beansmain section {
     grid-column-start: 1;
@@ -281,7 +293,7 @@ li {
   .beansmain img {
     grid-column-start: 1;
     grid-row-start: 3;
-    height: 320px;
+    height: 340px;
   }
   #buybeans {
     grid-column: 1;
