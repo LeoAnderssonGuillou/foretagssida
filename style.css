@@ -10,6 +10,15 @@ h1 {
   margin: 0px;
   font-size: 40px;
 }
+h2 {
+  margin: 0px;
+  margin-bottom: 4px;
+  font-size: 28px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: start;
+  align-self: end;
+}
 h3 {
   font-size: 18px;
   color: white;
@@ -291,6 +300,64 @@ li {
 #buypremium {
   background-color: gold;
   color: #0b0b0b;
+}
+
+.buymain {
+  height: 80vh;
+  width: 100vw;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+  grid-template-rows: 1fr 300px 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.buymain section {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  height: 100%;
+  font-size: 16px;
+  align-self: start;
+  margin-top: 20px;
+}
+
+.buymain img {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  height: 300px;
+}
+
+#add {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  height: 43px;
+  justify-self: start;
+  align-self: start;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.imageselect {
+  width: 65px;
+  height: 20px;
+  margin-top: 5vh;
+  margin-left: 8px;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(209, 209, 209);
+}
+#dotselect {
+  background-color: rgb(156, 156, 156);
 }
 
 @media screen and (max-width: 426px) {
