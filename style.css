@@ -345,7 +345,6 @@ li {
   width: 65px;
   height: 20px;
   margin-top: 5vh;
-  margin-left: 8px;
   grid-row-start: 3;
   grid-column-start: 1;
   align-self: start;
@@ -363,48 +362,7 @@ li {
   background-color: rgb(156, 156, 156);
 }
 
-@media screen and (max-width: 426px) {
-  .buymain {
-    height: min-content;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 250px 340px 60px 60px 60px 60px;
-  }
-  .buymain section {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .buymain img {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    height: 340px;
-  }
-  .imageselect {
-    grid-column-start: 1;
-    grid-row-start: 4;
-    margin-top: 0px;
-    align-self: center;
-  }
-  h2 {
-    margin-bottom: 0px;
-    grid-column-start: 1;
-    grid-row-start: 5;
-    justify-self: center;
-    align-self: center;
-  }
-  #add {
-    grid-column: 1;
-    grid-row-start: 6;
-    align-self: start;
-    justify-self: center;
-    align-self: center;
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 600px) {
   .homemain {
     grid-template-rows: 70px min-content 35px 43px 1fr;
   }
@@ -468,5 +426,53 @@ li {
   #premium {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
+  }
+
+  .buymain {
+    height: min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 250px 340px 60px 60px 60px 60px;
+  }
+  .buymain section {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .buymain img {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    height: 340px;
+  }
+  .imageselect {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 0px;
+    align-self: center;
+  }
+  h2 {
+    margin-bottom: 0px;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    justify-self: center;
+    align-self: center;
+  }
+  #add {
+    grid-column: 1;
+    grid-row-start: 6;
+    align-self: start;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0px;
+  }
+}
+#imageselectbeans {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 350px) {
+  .buymain h1 {
+    font-size: 35px;
   }
 }
