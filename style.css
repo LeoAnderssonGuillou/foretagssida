@@ -71,11 +71,11 @@ nav a {
 }
 
 .homemain {
-  height: 100%;
+  height: 110vh;
   background-color: #0b0b0b;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: 35px min-content 35px 43px 100px;
+  grid-template-rows: 35px min-content 35px 43px 20px 1fr;
   justify-items: center;
   align-items: center;
 }
@@ -114,22 +114,22 @@ nav a {
 }
 
 .phonesmain {
-  height: 100%;
+  height: 120vh;
   background-color: #0b0b0b;
   display: grid;
   grid-template-columns: 3fr min-content 1fr min-content 3fr;
-  grid-template-rows: 40px 45px min-content 30px 43px 200px;
+  grid-template-rows: 40px 45px min-content 30px 43px 150px 100px 1fr;
   justify-items: center;
   align-items: center;
 }
 
 .beansmain {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 1fr 300px 2fr;
+  grid-template-rows: 0.7fr 300px 2fr;
   justify-items: center;
   align-items: center;
 }
@@ -193,14 +193,17 @@ li {
   grid-row-start: 3;
   grid-column: 2 / 4;
   height: 43px;
+  align-self: start;
+  margin-top: 58px;
 }
 
 .onemain {
   width: 100vw;
+  height: 100vh;
   background-color: #0b0b0b;
   display: grid;
   grid-template-columns: 4fr 6fr 1fr 6fr 1fr 6fr 4fr;
-  grid-template-rows: 125px 380px 60px;
+  grid-template-rows: 125px 380px 1fr;
   justify-items: center;
   align-items: center;
 }
@@ -303,12 +306,12 @@ li {
 }
 
 .buymain {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: white;
   display: grid;
   grid-template-columns: 4fr 4fr 1fr;
-  grid-template-rows: 1fr 300px 2fr;
+  grid-template-rows: 0.8fr 300px 2fr;
   justify-items: center;
   align-items: center;
 }
@@ -361,6 +364,50 @@ li {
 }
 
 @media screen and (max-width: 426px) {
+  .buymain {
+    height: min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 250px 340px 60px 60px 60px 60px;
+  }
+  .buymain section {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .buymain img {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    height: 340px;
+  }
+  .imageselect {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 0px;
+    align-self: center;
+  }
+  h2 {
+    margin-bottom: 0px;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    justify-self: center;
+    align-self: center;
+  }
+  #add {
+    grid-column: 1;
+    grid-row-start: 6;
+    align-self: start;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .homemain {
+    grid-template-rows: 70px min-content 35px 43px 1fr;
+  }
   .beansmain {
     height: 140vh;
     grid-template-columns: 1fr;
@@ -382,6 +429,7 @@ li {
     grid-column: 1;
     grid-row-start: 4;
   }
+
   nav {
     height: 100%;
     display: flex;
@@ -400,6 +448,7 @@ li {
   }
 
   .onemain {
+    height: min-content;
     grid-template-columns: 1.5fr 8fr 1.5fr;
     grid-template-rows: 182px 380px 30px 380px 30px 380px 60px;
     justify-items: center;
